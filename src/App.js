@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Objectives from './Questions/2019/Objectives';
+import Counter from './counter/Counter';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App center h-screen flex-col">
+    
+{/* <Objectives/> */}
+<Navbar/>
+<div className="flex gap-10 flex-wrap">
+<Counter/>
+
+</div>
     </div>
   );
 }
