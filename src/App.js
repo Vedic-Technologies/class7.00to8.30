@@ -13,6 +13,8 @@ function App() {
 {/* <Navbar/> */}
 <div className="flex gap-10 flex-wrap">
 {/* <Counter/> */}
+{/* hello */}
+
 
 </div>
 <Calculator/>
