@@ -13,7 +13,7 @@ const Navbar = () => {
           </div>
 
           {/* Menu items */}
-          <div className="hidden md:block">
+          <div className="hidden sm:block">
             <ul className="ml-4 flex items-center space-x-4">
               <li>
                 <a href="/" className="text-white hover:text-gray-300">Home</a>

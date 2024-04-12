@@ -17,8 +17,7 @@ function decrement()
    setNumber(number-1)
 }
 
-  return (
-   
+  return (   
 <div className="">
 <div className="mt-10 text-5xl text-blue-600">Counter App</div>
     <div className='min-w-[500px] bg-green-700 mt-32 rounded-full flex justify-center items-center text-xl text-white '>
