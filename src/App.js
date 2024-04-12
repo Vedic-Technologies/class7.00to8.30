@@ -7,10 +7,12 @@ import Calculator from './calculator/Calculator';
 
 function App() {
   return (
+    <>
+ <Navbar/> 
     <div className="App center h-screen flex-col">
     
 {/* <Objectives/> */}
-{/* <Navbar/> */}
+
 <div className="flex gap-10 flex-wrap">
 {/* <Counter/> */}
 {/* hello */}
@@ -19,6 +21,7 @@ function App() {
 </div>
 <Calculator/>
     </div>
+    </>
   );
 }
 
