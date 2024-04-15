@@ -5,13 +5,18 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
-  const [toggle, setToggle]=useState(false);              
+  const [toggle, setToggle]=useState(false);   
+  const downloadCV=()=>
+  {
+
+  }
+  
   return (
     <nav className="">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 font">
 
         {/* Logo */}
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 sha">
           <div className="flex-shrink-0">
             <img src={logo} alt="Logo" className="h-8" />
           </div>
@@ -64,7 +69,13 @@ const Navbar = () => {
               
             </ul>
           </div>
-          <i class="fa-solid fa-sun"></i>
+          <div className="center">
+             <i class="fa-solid fa-sun"></i>
+             <div className="mx-3 border-2 px-5 py-1 bg-gray-900 rounded-md text-white border-gray-500 hover:bg-gray-700 hover:text-white cursor-pointer"
+             onClick={()=>downloadCV()}
+             >Download CV</div>
+          </div>
+         
 
                         {/* for small device */}
 
