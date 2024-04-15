@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
 import logo from '../assets/logoes/smile-mask.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
   const [toggle, setToggle]=useState(false);              
   return (
-    <nav className="bg-gray-800">
+    <nav className="">
       <div className="container mx-auto px-4">
 
         {/* Logo */}
@@ -25,22 +26,45 @@ const Navbar = () => {
        
          
           <div className="hidden sm:block">
-            <ul className="ml-4 flex items-center space-x-4">
-              <li>
-                <a href="/" className="text-white hover:text-gray-300">Home</a>
+            <ul className="ml-4 flex items-center gap-14 font-semibold">
+             
+             <Link to='/'>
+              <li className="text-gray-700 hover:text-blue-700">
+                Home
               </li>
-              <li>
-                <a href="/portfolio" className="text-white hover:text-gray-300">Portfolio</a>
+              </Link>
+             
+
+              <Link to='/projects'>
+              <li className="text-gray-700 hover:text-blue-700">
+              Projects
               </li>
-              <li>
-                <a href="/about" className="text-white hover:text-gray-300">About</a>
+              </Link>
+
+              <Link to='/Skill'>
+              <li className="text-gray-700 hover:text-blue-700">
+              Skill
               </li>
-              <li>
-                <a href="/contact" className="text-white hover:text-gray-300">Contact</a>
+              </Link>
+
+              <Link to='/About'>
+              <li className="text-gray-700 hover:text-blue-700">
+              About
               </li>
+              </Link>
+
+              <Link to='/Contact'>
+              <li className="text-gray-700 hover:text-blue-700">
+              Contact
+              </li>
+              </Link>
+             
+             
+             
+              
             </ul>
           </div>
-
+          <i class="fa-solid fa-sun"></i>
 
                         {/* for small device */}
 
@@ -50,7 +74,7 @@ const Navbar = () => {
                 <a href="/" className="text-white hover:text-gray-300">Home</a>
               </li>
               <li >
-                <a href="/portfolio" className="text-white hover:text-gray-300">Portfolio</a>
+                <a href="/portfolio" className="text-white hover:text-blue-700">Portfolio</a>
               </li>
               <li>
                 <a href="/about" className="text-white hover:text-gray-300">About</a>
