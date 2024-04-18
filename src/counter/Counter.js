@@ -3,21 +3,23 @@ import logo from '../assets/logoes/smile-mask.png'
 
 const Counter = () => {
 
-const [number,setNumber]=useState(56)
+const [number,setNumber]=useState(2)
 
 function increment()
 {
    
-   setNumber(number+10)
+   setNumber(number+1)
 }
 
 function decrement()
 {
+  if (number > 0){
+    setNumber(number-1)
+  }
    
-   setNumber(number-1)
 }
 
-  return (   
+  return (
 <div className="">
 <div className="mt-10 text-5xl text-blue-600">Counter App</div>
     <div className='min-w-[500px] bg-green-700 mt-32 rounded-full flex justify-center items-center text-xl text-white '>
