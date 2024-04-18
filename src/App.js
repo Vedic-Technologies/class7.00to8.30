@@ -6,11 +6,12 @@ import Projects from './pages/Projects';
 import Skill from './pages/Skill';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Counter from './counter/Counter';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar />     
 
       <Routes>
         <Route path='/' element={<Home/>}></Route>

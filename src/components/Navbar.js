@@ -42,31 +42,21 @@ const Navbar = () => {
 
               <Link to='/projects'>
               <li className="text-gray-700 hover:text-blue-700">
-              Projects
+              Small Projects
               </li>
               </Link>
 
               <Link to='/Skill'>
               <li className="text-gray-700 hover:text-blue-700">
-              Skill
+              Medium Projects
               </li>
               </Link>
 
               <Link to='/About'>
               <li className="text-gray-700 hover:text-blue-700">
-              About
+             Large Projects
               </li>
               </Link>
-
-              <Link to='/Contact'>
-              <li className="text-gray-700 hover:text-blue-700">
-              Contact
-              </li>
-              </Link>
-             
-             
-             
-              
             </ul>
           </div>
           <div className="center">
