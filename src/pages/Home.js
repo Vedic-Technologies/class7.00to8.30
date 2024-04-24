@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../components/Card'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -40,7 +41,8 @@ const Home = () => {
 image_url:"https://1.bp.blogspot.com/-4AQ6-vNhzP4/XrPKZKrZBqI/AAAAAAAAAV0/W0z04T0_Rrsf7TwMAu3jyl7eF6nrameuQCLcBGAsYHQ/s1600/Working%2BCalculator%2Busing%2BHTML%2BCSS%2Band%2BjQuery.png",
     detail: "its a calculator, in which can add, substract...",
       languages_used: ["html","tailwind","react"],
-      difficulty_level:"easy"
+      difficulty_level: "easy",
+      projectUrl:"/calculator"
     },
     {
       id: 3,
@@ -59,8 +61,6 @@ image_url:"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021
             languages_used: ["html","tailwind","react"],
             difficulty_level:"easy"
     }]
-
-  
   
   
   return (
@@ -70,6 +70,7 @@ image_url:"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021
         Projects.map((item,index) => {
           return (
             <>
+              <Link to='/calculator'>
               <div className="flex border-2 rounded-xl">
                 <div className='w-1/2'><img src={ item.image_url} alt="" /></div>
                 <div className="w-1/2 center flex-col p-5">
@@ -79,6 +80,9 @@ image_url:"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021
                   
                 </div>
             </div>
+
+              </Link>
+            
             </>
        )
      })
