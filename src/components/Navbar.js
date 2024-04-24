@@ -57,13 +57,16 @@ const Navbar = () => {
              Large Projects
               </li>
               </Link>
+              <Link to='/About'>
+              <li className="text-gray-700 hover:text-blue-700">
+             Students Projects
+              </li>
+              </Link>
             </ul>
           </div>
           <div className="center">
              <i class="fa-solid fa-sun"></i>
-             <div className="mx-3 border-2 px-5 py-1 bg-gray-900 rounded-md text-white border-gray-500 hover:bg-gray-700 hover:text-white cursor-pointer"
-             onClick={()=>downloadCV()}
-             >Download CV</div>
+            
           </div>
          
 
