@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../components/Card'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -40,7 +41,8 @@ const Home = () => {
 image_url:"https://1.bp.blogspot.com/-4AQ6-vNhzP4/XrPKZKrZBqI/AAAAAAAAAV0/W0z04T0_Rrsf7TwMAu3jyl7eF6nrameuQCLcBGAsYHQ/s1600/Working%2BCalculator%2Busing%2BHTML%2BCSS%2Band%2BjQuery.png",
     detail: "its a calculator, in which can add, substract...",
       languages_used: ["html","tailwind","react"],
-      difficulty_level:"easy"
+      difficulty_level: "easy",
+      projectUrl:"/calculator"
     },
     {
       id: 3,
@@ -48,7 +50,8 @@ image_url:"https://1.bp.blogspot.com/-4AQ6-vNhzP4/XrPKZKrZBqI/AAAAAAAAAV0/W0z04T
 image_url:"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/08/to-dol-list-2.jpg",
     detail: "its a Simple todo, in which we can add daily tasks,",
       languages_used: ["html","tailwind","react"],
-      difficulty_level:"easy"
+      difficulty_level: "easy",
+      projectUrl:"/color_changer"
       
     },
     {
@@ -57,10 +60,19 @@ image_url:"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021
       image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9RtwEJo2aaqj8vBsvAosEBFfQCHD88XlPbFaBqbVSGQ&s",
           detail: "its a digital watch, in which can see current time",
             languages_used: ["html","tailwind","react"],
-            difficulty_level:"easy"
-    }]
-
-  
+      difficulty_level: "easy",
+      projectUrl:"/color_changer"
+    },
+    {
+      id: 5,
+      name: "Backgrond Changer",
+      image_url:"https://i.ibb.co/xH81qTc/Screenshot-2024-04-25-072336.png",
+          detail: "its a background changer, it changes background color of page",
+            languages_used: ["html","tailwind","react"],
+      difficulty_level: "easy",
+            projectUrl:"/color_changer"
+    }
+  ]
   
   
   return (
@@ -70,8 +82,9 @@ image_url:"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021
         Projects.map((item,index) => {
           return (
             <>
+              <Link to={ item.projectUrl}>
               <div className="flex border-2 rounded-xl">
-                <div className='w-1/2'><img src={ item.image_url} alt="" /></div>
+                <div className='w-1/2'><img src={ item.image_url} alt=""  className='h-80'/></div>
                 <div className="w-1/2 center flex-col p-5">
                   <div className="text-xl font-medium">{item.name}</div>
                   <div className="mt-3">{item.detail}</div>
@@ -79,6 +92,9 @@ image_url:"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021
                   
                 </div>
             </div>
+
+              </Link>
+            
             </>
        )
      })

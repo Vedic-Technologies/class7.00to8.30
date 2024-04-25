@@ -40,24 +40,24 @@ const Navbar = () => {
               </Link>
              
 
-              <Link to='/projects'>
+              <Link to='/small_projects'>
               <li className="text-gray-700 hover:text-blue-700">
               Small Projects
               </li>
               </Link>
 
-              <Link to='/Skill'>
+              <Link to='/medium_projects'>
               <li className="text-gray-700 hover:text-blue-700">
               Medium Projects
               </li>
               </Link>
 
-              <Link to='/About'>
+              <Link to='/large_projects'>
               <li className="text-gray-700 hover:text-blue-700">
              Large Projects
               </li>
               </Link>
-              <Link to='/About'>
+              <Link to='/students_projects'>
               <li className="text-gray-700 hover:text-blue-700">
              Students Projects
               </li>
