@@ -8,6 +8,7 @@ import MediumProjects from './pages/MediumProjects';
 import LargeProjects from './pages/LargeProjects';
 import StudentsProjects from './pages/StudentsProjects';
 import Calculator from './projects/Calculator';
+import ColorChanger from './projects/colorchanger/ColorChanger';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/large_projects' element={<LargeProjects/>}></Route>
         <Route path='/students_projects' element={<StudentsProjects/>}></Route>
         <Route path='/calculator' element={<Calculator/>}></Route>
+        <Route path='/color_changer' element={<ColorChanger/>}></Route>
        
 
 
